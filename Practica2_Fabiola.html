@@ -4,70 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PineApplePen</title>
-    <link rel="stylesheet" href="Practica2_Fabiola.css">
+    <link rel="stylesheet" href="Practica2_Fabiola.css" type="text/css" media="screen, print">
 </head>
 <body>
-    <header>
-        <div class="container-inicio">
-            <h1>PineApplePen</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Marcas</a></li>
-                    <li><a href="#">Tiendas</a></li>
-                    <li><a href="#">Sobre nosotros</a></li>
-                </ul>
-            </nav>
-        </div>
+
+    <!-- Encabezado -->
+    <header class="header">
+        <h1 class="logo">PineApplePen</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Marcas</a></li>
+                <li><a href="#">Tiendas</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+            </ul>
+        </nav>
     </header>
-    <section class="hero">
-        <div class="container">
-            <div class="slider">
-                <div class="slide active">
-                    <img src="https://via.placeholder.com/1200x400" alt="Slide 1">
-                </div>
-                <div class="slide">
-                    <img src="https://via.placeholder.com/1200x400" alt="Slide 2">
-                </div>
-                <div class="slide">
-                    <img src="https://via.placeholder.com/1200x400" alt="Slide 3">
-                </div>
-            </div>
-            <h2>Promoción</h2>
-            <p>Descubre nuestras últimas ofertas</p>
-            <button>Ver más</button>
+
+    <!-- Sección de Promoción -->
+    <section class="promocion">
+        <!-- <img src="pencils.jpg" alt="Promoción de lápices" class="promo-img"> -->
+        <div class="promo-text">Promoción</div>
+        <span class="arrow left">&#10094;</span>
+        <span class="arrow right">&#10095;</span>
+    </section>
+
+    <!-- Productos y Recomendados -->
+    <section class="productos">
+        <h2>Nuestros productos</h2>
+        <div class="producto">
+            <img src="imagenes/eraser.jpg" alt="Borrador Milan">
+        </div>
+        <div class="producto">
+            <img src="imagenes/notebook.jpg" alt="Cuaderno">
+        </div>
+        <div class="producto">
+            <img src="imagenes/caryons.jpg" alt="Crayones Manley">
         </div>
     </section>
-    <section class="products">
-        <div class="container">
-            <h2>Nuestros productos</h2>
-            <div class="product-grid">
-                <div class="product">
-                    <img src="https://via.placeholder.com/300x300" alt="Product 1">
-                    <h3>Producto 1</h3>
-                    <p>Descripción del producto 1</p>
-                    <button>Ver más</button>
-                </div>
-                <div class="product">
-                    <img src="https://via.placeholder.com /300x300" alt="Product 2">
-                    <h3>Producto 2</h3>
-                    <p>Descripción del producto 2</p>
-                    <button>Ver más</button>
-                </div>
-                <div class="product">
-                    <img src="https://via.placeholder.com/300x300" alt="Product 3">
-                    <h3>Producto 3</h3>
-                    <p>Descripción del producto 3</p>
-                    <button>Ver más</button>
-                </div>
-            </div>
+
+    <section class="recomendados">
+        <h2>Recomendados</h2>
+        <div class="recomendado">
+            <img src="imagenes/pen.jpg" alt="Bolígrafo">
+            <p>Añadir un poco de texto</p>
         </div>
     </section>
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 PineApplePen</p>
+
+    <!-- Redes Sociales -->
+    <footer class="social">
+        <a href="#"><img src="imagenes/instagram-icon.jpg" alt="Instagram"></a>
+        <a href="#"><img src="imagenes/facebook-icon.jpg" alt="Facebook"></a>
+        <a href="#"><img src="imagenes/twitter-icon.jpg" alt="Twitter"></a>
+    </footer>
+
+    <!-- Ubicación y Atención al Cliente -->
+    <footer class="ubicacion">
+        <div class="map">
+            <img src="imagenes/map.jpg" alt="Mapa">
+            <p>C/ Inexistente nº 0, Madrid</p>
+        </div>
+        <div class="info">
+            <p>Tiendas</p>
+            <p>Sobre nosotros</p>
+            <p>Atención al cliente</p>
+        </div>
+        <div class="person">
+            <img src="imagenes/woman-icon.jpg" alt="Persona con marcador de ubicación">
         </div>
     </footer>
-    <script src="script.js"></script>
+
 </body>
 </html>
