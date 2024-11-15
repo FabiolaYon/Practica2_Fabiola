@@ -25,6 +25,7 @@ body {
     margin: 0;
     font-family: var(--font-family);
     background-color: var(--secondary-color);
+    background-color: #e3d7db; 
 }
 
 /* Encabezado */
@@ -36,6 +37,8 @@ body {
     justify-content: space-between;
     padding: 1rem 2rem;
     width: 100%;
+    background-color: #8a809e; 
+
 }
 
 .logo {
@@ -60,13 +63,39 @@ body {
     position: relative;
     max-height: 50vh; 
     overflow: hidden; 
+    background-color: #f0f0f0; 
 }
 
 /* Imagen de promoción*/
 .promo-img {
-    width: 100vw;  
-    height: auto;  
-    object-fit: cover; 
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+
+/* Puntos de navegación en la sección de promoción */
+.promo-dots {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.promo-dots .dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.promo-dots .dot:hover, .promo-dots .dot.active {
+    background-color: var(--primary-color);
 }
 
 /* Flechas de navegación */
@@ -87,9 +116,12 @@ body {
 
 /* Sección de Productos */
 .productos, .recomendados {
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 1200px;
     padding: 2rem;
-    text-align: center;
-    flex-shrink: 0;
 }
 .productos h2, .recomendados h2 {
     color: var(--primary-color);
@@ -102,6 +134,7 @@ body {
     border-radius: 10px;
     padding: 1rem;
     margin: 1rem;
+    width: 180px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .producto img, .recomendado img {
@@ -116,6 +149,7 @@ body {
     padding: 1rem;
     background-color: white;
     width: 100%;
+    padding: 1rem 0;
 }
 .social a img {
     width: 32px;
@@ -130,10 +164,14 @@ body {
     justify-content: space-around;
     padding: 2rem;
     width: 100%;
+    background-color: #4a4a68;
+    padding: 2rem;
+    color: white;
 }
 .map iframe {
-    width: 100%;
-    height: auto;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
 }
 .info p {
     margin: 0.5rem 0;
@@ -141,6 +179,7 @@ body {
 .person img {
     width: 100px;
     border-radius: 10px;
+    max-width: 100px;
 }
 
 /* Footer general */
